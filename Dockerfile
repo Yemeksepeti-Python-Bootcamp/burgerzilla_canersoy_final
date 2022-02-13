@@ -43,7 +43,7 @@ RUN env/bin/python -m pip install --upgrade pip
 RUN env/bin/pip install -r requirements.txt
 
 COPY app app
-COPY app.py config.py .flaskenv logger.py boot.sh ./
+COPY app.py config.py .flaskenv logger.py boot.sh initDbValues.py ./
 RUN chmod +x boot.sh
 
 ENV FLASK_APP app.py

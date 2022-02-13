@@ -15,9 +15,20 @@ Install with pip:
 $ pip install -r requirements.txt
 ```
 
+## Logging
+```
+The logger.py file includes function logEvent that allows all transactions to be logged into logs.txt file
+```
+
+## DB Schema
+<img alt="DB_Schema.png" height="500" src="DB_Schema.png" width="500"/>
+
 ## Burgerzilla Application Structure 
 ```
-burgerzilla
+burgerzilla_canersoy_final
+├─ .gitignore
+├─ DB_Schema.png
+├─ Dockerfile
 ├─ README.md
 ├─ app
 │  ├─ __init__.py
@@ -37,20 +48,19 @@ burgerzilla
 │     ├─ menu.py
 │     └─ restaurant.py
 ├─ app.py
+├─ boot.sh
 ├─ config.py
+├─ docker-compose.yml
+├─ initDbValues.py
+├─ logger.py
+├─ logs.txt
 ├─ requirements.txt
 └─ tests
-   ├─ apis
-   │  ├─ test_customer_api.py
-   │  ├─ test_login_api.py
-   │  ├─ test_menu_api.py
-   │  └─ test_restaurant_api.py
    ├─ base.py
-   └─ models
-      ├─ test_menu_model.py
-      ├─ test_orders_model.py
-      ├─ test_restaurants_model.py
-      └─ test_users_model.py
+   ├─ test_customer_api.py
+   ├─ test_login_api.py
+   ├─ test_menu_api.py
+   └─ test_restaurant_api.py
 ```
 
 ## Swagger documentation page
@@ -90,10 +100,14 @@ values ('Bombili',30,'Meşhur dombili burger, özel soslu, sarmısaklı ve soğa
 ('Delüks',70,'Özel dublemuble burger, patates ve eritme peynirle birlikte','x-txmt-filehandle://job/Preview/resource/dombili-ac-doyuran.jpg',2)
 ```
 
-*** While the app is running on docker, be sure to test the enpoints on URL http://localhost:80/ ***
+<br/><br/>
+
+# **While the app is running on docker, be sure to test the enpoints on URL http://localhost:80/**
 ```
 Example: http://localhost:80/login
 ```
+
+<br/><br/>
 
 # Customer endpoints
 ## Login
@@ -333,6 +347,7 @@ RESPONSE
     }
 }
 ```
+<br/><br/>
 
 # Restaurant endpoints
 ## Login
@@ -455,6 +470,7 @@ RESPONSE
     ]
 }
 ```
+<br/><br/>
 
 # Menu endpoints
 ## View menu of restaurant
