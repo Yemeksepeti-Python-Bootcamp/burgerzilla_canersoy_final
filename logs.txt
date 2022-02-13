@@ -1,0 +1,29 @@
+February 11 2022 - 03:22:27 User successfully logged in with email ugurozy@musteri.nett
+February 11 2022 - 03:22:40 Current user: 1
+February 11 2022 - 03:22:44 Customer with id 1 created a new order with itemIds [2, 3] from restaurant(s) [2, 2]
+February 11 2022 - 03:22:56 Customer with id 1 created a new order with itemId 2 from restaurant 2
+February 11 2022 - 03:23:01 Customer with id 1 viewed all of his/her orders.
+February 11 2022 - 03:23:12 Customer with id 1 viewed details of his/her order with orderId 97080429-0cb9-42e7-812c-eacb29b71e0c
+February 11 2022 - 03:23:25 Customer with id 1 canceled his/her order with orderId 97080429-0cb9-42e7-812c-eacb29b71e0c
+February 11 2022 - 03:23:41 Customer with id 1 updated itemId as 1 in his/her order with id of order as 3
+February 11 2022 - 03:23:46 User successfully logged in with email tuncd@restoran.nett
+February 11 2022 - 03:24:06 Current user: 4
+February 11 2022 - 03:24:10 Restaurant with id 2 viewed all of its orders.
+February 11 2022 - 03:24:32 Restaurant with id 2 viewed details of its order with orderId 1bab543a-4726-4da0-bece-83f6aea32672
+February 11 2022 - 03:25:04 Restaurant with id 2 changed order status of 1bab543a-4726-4da0-bece-83f6aea32672 to 'cancel'
+February 11 2022 - 03:25:09 Restaurant with id 2 viewed all of its menu items.
+February 11 2022 - 03:25:13 Restaurant with id 2 added a new menu item to its menu: Test Item,100,Test item description.
+February 11 2022 - 03:25:16 Restaurant with id 2 viewed details of its menu item with menu itemId 4.
+February 11 2022 - 03:25:18 Restaurant with id 2 deleted its menu item with menu itemId 7.
+February 11 2022 - 03:25:21 Restaurant with id 2 changed 'name' of menu itemId 4
+February 11 2022 - 03:25:21 Restaurant with id 2 changed 'price' of menu itemId 4
+February 11 2022 - 03:25:21 Restaurant with id 2 changed 'description' of menu itemId 4
+February 12 2022 - 01:03:55 User successfully logged in with email tuncd@restoran.nett
+February 12 2022 - 01:04:07 User login failed due to bad email or password. Email: tuncd@asdasfasdfadsf.nett
+February 12 2022 - 01:04:23 User login failed due to bad email or password. Email: barany@restoran.nett
+February 13 2022 - 23:51:55 Error during login (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "burgerzillaDB" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+February 13 2022 - 23:52:10 Error during login (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "burgerzillaDB" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
