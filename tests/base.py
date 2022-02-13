@@ -3,6 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from config import TestingConfig
 from app import db
+from flask_restx import Api
 from flask_jwt_extended import JWTManager
 
 def create_app(Config):
@@ -10,6 +11,7 @@ def create_app(Config):
     app.config.from_object(Config)
     db = SQLAlchemy(app)
     jwt = JWTManager(app)
+    api = Api(app,doc="/docs",title="Burgerzilla APIs",description="Burgerzilla API descriptions",version="1.0")
     return app
 
 class BaseCase(unittest.TestCase):

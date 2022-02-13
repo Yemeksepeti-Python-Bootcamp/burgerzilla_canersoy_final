@@ -1,4 +1,5 @@
 import json
+from app import app
 
 from tests.base import BaseCase
 
@@ -11,7 +12,6 @@ class TestLogin(BaseCase):
             "password": password
         })
 
-        response = self.client.post('/login', 
-            headers={"Content-Type": "application/json"},
-            data=payload)
+        response = self.client.get('/currentUser',
+        content_type="application/json")
         print(response.data.decode())

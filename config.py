@@ -12,4 +12,3 @@ class TestingConfig(Config):
     # In-memory SQLite for testing
     SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"
     PRESERVE_CONTEXT_ON_EXCEPTION = False
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
